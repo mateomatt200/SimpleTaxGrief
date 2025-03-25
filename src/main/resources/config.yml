@@ -1,0 +1,23 @@
+# Define tax rates based on claim block usage
+tax_rates:
+  - "100:5"    # 100-1000 claim blocks = $5 tax
+  - "1000:100" # 1000-10000 claim blocks = $100 tax
+  - "10000:1000" # 10000+ claim blocks = $1000 tax
+
+# Tax deduction interval in seconds
+tax_interval: 60
+
+tax_reminder_intervals: [10, 5, 1] # Minutes before collection in which a notice is sent
+
+
+# Real-world days before land is unclaimed due to bankruptcy
+bankruptcy_unclaim_days: 90
+
+# Percentage of tax applied to trusted members
+member_tax_percentage: 20
+
+# Custom messages
+messages:
+  tax_upcoming: "&aTax will be deducted in {minutes} minutes."
+  tax_deducted: "&aYour tax of ${amount} has been deducted."
+  bankrupt_warning: "&cYou are bankrupt! Recover funds before {days} days to keep your claims."

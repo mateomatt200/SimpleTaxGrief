@@ -1,0 +1,9 @@
+name: SimpleTaxGrief
+version: '${project.version}'
+main: com.venned.simpletaxgrief.Main
+api-version: '1.20'
+depend:
+  - GriefPrevention
+commands:
+  daisytax:
+    description: Main Command
